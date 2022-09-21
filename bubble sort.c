@@ -1,38 +1,39 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-void bubblesort(int vet[], int tam);
+void bubblesort(int vet[], int tam);//
 
 int main(){
-int n;
+int n; //criando variavel que armazena o tamanho do vetor	
 
-printf("\nInsira o tamanho do vetor: ");
-scanf("%i, &n");
+printf("\nInsira o tamanho do vetor: "); //digitando o tamanho do vetor
+scanf("%i", &n);//O computador está lendo um valor para o tamanho do vetor e o usuario(eu) estou inserindo
 
-int i, vet[n];
+int i, vet[n]; //Criando vetor com o tamanho inserido pelo usuario
 
-for(i=0; i < n; i++){
-	printf("\nInsira o valor para o %i° elemento do vetor:", i+1);
-	scanf("%i", &vet[i]);
-	
-	printf("\nVetor antes da ordenacao:");
-	
-	for(i=0; i < n; i++){
-		printf("%i", vet[i]);
+for(i=0; i < n; i++){ //laço que se repete enquanto a condição "i < n" for verdadeira
+	printf("\nInsira o valor para o %i° elemento do vetor:", i+1); //Digitando o valor para cada posição do vetor
+	scanf("%i", &vet[i]);//O computador está lendo o valor para cada posiçao do vetor e o usuario (eu) estou inserindo
 	}
 
-bubblesort(vet, n);
+/*
+printf("\nVetor antes da ordenacao:");//Informando que o vetor será mostrado antes de ser ordenado
+	
+for(i=0; i < n; i++){ //Laço de repetição para mostrar o valor em cada posição do vetor
+	printf("%i", vet[i]); //Mostrando valor de cada posição do vetor
+	}*/
+bubblesort(vet, n); //Chamando a função
 
-printf("\nVetor apos ordenacao; ");
+printf("\nVetor apos ordenacao; "); //Informando que o vetor será mostrado depois de ser ordenado
 
-for(i=0; i < 0; i++){
-	printf("%i", vet[i]);
+for(i=0; i < n; i++){ //Laço de repetição para mostrar o valor em cada posição do vetor
+	printf("%i", vet[i]);//Mostrando valor de cada posição do vetor
 	
 }
-printf("\n\n");
+printf("\n\n"); //pulando linha
 
 }
-void bubblesort(int vet[], int tam){
+void bubblesort(int vet[], int tam){ //criando a funçao bubble sort
 	int i, j, aux;
 for(i=0; i < n; i++){
 }
