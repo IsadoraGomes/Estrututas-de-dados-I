@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-void bubblesort(int vet[], int tam);//
+void bubblesort(int vet[], int tam);//fazendo a funçao existir
 
 int main(){
 int n; //criando variavel que armazena o tamanho do vetor	
@@ -34,15 +34,16 @@ printf("\n\n"); //pulando linha
 
 }
 void bubblesort(int vet[], int tam){ //criando a funçao bubble sort
-	int i, j, aux;
-for(i=0; i < n; i++){
-}
-	for(j=0; j < tam - 1; j++){
-		if(vet[j] > vet[j+1]){
-	
-	aux = vet[j];
-	vet[j] = vet[j+1];
-	vet[j+1] = aux;
+	int i, j, aux; //declarando variaveis auxiliares
+for(i=0; i < tam; i++){ //laço de repetiçao 
+
+	for(j=0; j < tam; j++){ //enquanto j for menor que o tamanho do vetor o laço se repete(enquanto a condiçao for verdadeira o laço se repete)
+		
+		if(vet[j] > vet[j+1]){ //verifica se a condiçao e verdadeira ou falsa
+			
+	aux = vet[j];// auxiliar esta recebendo o valor do vetor na posiçao j
+	vet[j] = vet[j+1];//o vetor na poisção j está recebendo o valor do vetor na posição j+1
+	vet[j+1] = aux;//o vetor na posiçao j+1 recebe o valor guardado na auxiliar
 	
 		}
 	}
